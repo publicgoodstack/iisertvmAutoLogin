@@ -60,10 +60,14 @@ A `systemd` user timer fires every minute and runs a script that re-submits your
 
 Your password is stored in plaintext in `~/bin/iiser-login.sh`, restricted to your user account only (`chmod 700`). This is the same trust model as any saved Wi-Fi password on your machine — anyone with access to your user account already has access to far more than this. If that's not an acceptable tradeoff for you, don't run this script.
 
+## Something not working?
+
+Open an [issue](https://github.com/publicgoodstack/iisertvmAutoLogin/issues) with what you tried and what happened — the contents of `~/.iiser-login.log` and `systemctl --user status iiser-login.timer` are usually the most useful things to include.
+
 ## Disclaimer
 
 This is an unofficial, independently written tool and is not affiliated with or endorsed by IISER Thiruvananthapuram. It automates the same login request your browser already sends — use at your own discretion, and don't share your credentials file.
 
 ## License
 
-MIT 
+MIT (or whatever you choose to add here — pick one and add a `LICENSE` file to the repo)
