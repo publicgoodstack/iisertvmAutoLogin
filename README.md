@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # IISER TVM Auto Login
 
 Automatically log back in to the IISER TVM campus captive portal (`gateway.iisertvm.ac.in:8090`) whenever your session expires — no more opening a browser tab just to re-enter your credentials every time you get logged off.
@@ -9,6 +13,8 @@ This sets up a `systemd` user timer on Linux that pings the portal every minute 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/publicgoodstack/iisertvmAutoLogin/main/auto_login_setup.sh | bash
 ```
+
+You can [view the script source](https://github.com/publicgoodstack/iisertvmAutoLogin/blob/main/auto_login_setup.sh) on GitHub before running it — it's short, and asking for your password is worth double-checking.
 
 You'll be prompted for your LDAP username and password during setup. They're saved locally in `~/bin/iiser-login.sh`, readable only by you (`chmod 700`), and never sent anywhere except directly to the campus gateway.
 
@@ -26,7 +32,7 @@ You'll be prompted for your LDAP username and password during setup. They're sav
 
 ## Manual install
 
-If you'd rather not pipe a script straight into `bash`, you can inspect it first:
+If you'd rather not pipe a script straight into `bash`, [read it on GitHub](https://github.com/publicgoodstack/iisertvmAutoLogin/blob/main/auto_login_setup.sh) first, or download and inspect it locally:
 
 ```bash
 curl -fsSL -o auto_login_setup.sh https://raw.githubusercontent.com/publicgoodstack/iisertvmAutoLogin/main/auto_login_setup.sh
@@ -70,4 +76,4 @@ This is an unofficial, independently written tool and is not affiliated with or 
 
 ## License
 
-MIT
+MIT 
