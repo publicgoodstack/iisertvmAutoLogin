@@ -70,4 +70,4 @@ This is an unofficial, independently written tool and is not affiliated with or 
 
 ## License
 
-MIT (or whatever you choose to add here — pick one and add a `LICENSE` file to the repo)
+MIT
