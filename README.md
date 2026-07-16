@@ -1,8 +1,3 @@
----
-layout: default
-permalink: /
----
-
 # IISER TVM Auto Login
 
 Automatically log back in to the IISER TVM campus captive portal (`gateway.iisertvm.ac.in:8090`) whenever your session expires — no more opening a browser tab just to re-enter your credentials every time you get logged off.
@@ -27,7 +22,7 @@ You'll be prompted for your LDAP username and password during setup. They're sav
 
 ## Requirements
 
-- Linux with `systemd` (tested on Pop!_OS; should work on most modern distros)
+- Linux with `systemd`
 - `curl`
 - An IISER TVM LDAP account
 
