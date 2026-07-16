@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /
 ---
 
 # IISER TVM Auto Login
