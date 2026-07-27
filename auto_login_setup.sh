@@ -26,8 +26,8 @@ fi
 
 
 
-read -p "Username: " USERNAME
-read -s -p "Password: " PASSWORD
+read -p "Username: " USERNAME < /dev/tty
+read -s -p "Password: " PASSWORD < /dev/tty
 echo
 
 
